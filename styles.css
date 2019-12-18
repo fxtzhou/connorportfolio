@@ -1,0 +1,79 @@
+
+
+body {
+  position: relative;
+color: #eee;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  
+  font-family: 'Helvetica', 'Roboto Condensed', sans-serif;
+ 
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  justify-content: left;
+}
+
+
+#navigation, #navcontainer{
+  background-color: #E98F83;
+
+}
+
+.nav-item{
+  line-height: 10px;
+}
+
+#section1 {  
+background-color: #eee;
+height: 75vh;
+font-size: 5vw;
+  padding-top: 25%;
+  color: white;
+}
+
+#section2 {
+  width: 100vw;
+}
+
+#project-cards{
+  height: 75vh;
+}
+
+#section3 {
+padding-bottom: 10vh;
+width: 100vw;
+margin-top: 100px;
+position: relative;
+z-index:1;
+background: linear-gradient(150deg,  #fff 25%,  #EFCEBC 50%, #E98F83 100%);
+
+}
+
+
+.contact-links, .nav-link{
+  float: left;
+color: #E98F83
+}
+
+
+img {
+  object-fit: contain;
+  height: 200px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px){
+  #section1 {  
+    background: url("bg.jpeg");
+    background-size: cover;
+  }
+}

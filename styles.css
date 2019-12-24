@@ -32,11 +32,16 @@ h5 {
 }
 
 #section1 {  
-background-color: #eee;
+background:url("desktopbg.jpeg");
 height: 75vh;
-font-size: 5vw;
-  padding-top: 25%;
+z-index: -1;
+}
+
+#intro{
+  font-size: 5vw;
+  padding-top: 50%;
   color: white;
+
 }
 
 #section2 {
@@ -47,13 +52,13 @@ font-size: 5vw;
   height: 75vh;
 }
 
-#section3 {
+#gradient{
 padding-bottom: 10vh;
 width: 100vw;
 margin-top: 100px;
 position: relative;
 z-index:1;
-background: linear-gradient(150deg,  #fff 25%,  #EFCEBC 50%, #E98F83 100%);
+background: linear-gradient(150deg,  #fff 25%,  #05d5ff 50%, #a6ffcb 100%);
 
 }
 

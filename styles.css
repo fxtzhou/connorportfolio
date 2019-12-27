@@ -1,10 +1,11 @@
 
 
 body {
-  position: relative;
+position: relative;
 color: #eee;
-
 }
+
+
 
 
 p {
@@ -27,11 +28,63 @@ h5{
   font-family: 'Roboto', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+
+#portfolio-imgs1{
+  background:url("caraok.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+
+#portfolio-imgs2{
+  background:url("jonfinder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+
+
+#portfolio-imgs3{
+  background:url("project3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+}
+
+
 
 code{
 padding: 5px;
 white-space: pre-line;
 
+}
+
+.fas{
+  padding-right: 10px;
 }
 
 #code-snippet{
@@ -42,13 +95,15 @@ border: 1px grey solid;
 
 }
 
-.navbar-fixed-top.scrolled {
+.navbar-fixed-top.scrolled{
   background-color: #E98F83 !important;
   transition: background-color 200ms linear;
 }
 
 #navigation{
-  overflow: auto;
+  right: 0;
+  left: 0;
+  min-width: 100vw;
 }
 
 #logo{
@@ -64,11 +119,13 @@ border: 1px grey solid;
 justify-content: right;
 }
 
+
 #section1 {  
 background:url("guy.jpeg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: 50% 50%;
+width: 100vw;
 height: 50vh;
 z-index: -1;
 display: flex;
@@ -83,7 +140,7 @@ text-align: center;
 }
 
 #about{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #section2 {
@@ -93,11 +150,13 @@ text-align: center;
 
 
 #project-cards{
-  min-height: 75vh;
+
   /* background: url(project3.jpeg);
   background-size: cover; */
+align-content: center;
   color: black;
   font-size: 3vw;
+  border:none;
 }
 
 #blurbs{
@@ -121,9 +180,13 @@ background: linear-gradient(170deg,  #fff 40%,  #EA6B80 80%, #E98F83
 }
 
 
-.contact-links, .nav-link{
+.contact-links, .nav-link {
   float: left;
 color: #E98F83
+}
+
+#custom-footer{
+  background-color: #E98F83;
 }
 
 

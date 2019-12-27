@@ -3,6 +3,7 @@
 body {
 position: relative;
 color: #eee;
+text-decoration: none;
 }
 
 
@@ -28,9 +29,11 @@ h5{
   font-family: 'Roboto', sans-serif;
 }
 
+
 a{
   text-decoration: none;
 }
+
 
 img{
   width: 100%;
@@ -140,7 +143,7 @@ text-align: center;
 }
 
 #about{
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 #section2 {
@@ -157,6 +160,11 @@ align-content: center;
   color: black;
   font-size: 3vw;
   border:none;
+}
+
+#project-cards a{
+  color: black;
+  
 }
 
 #blurbs{
@@ -203,6 +211,9 @@ body{
   line-height: 150%;
 }
 
+.container{
+  width: 100%;
+}
 
 #navigation{
 max-height: 100px;
@@ -218,22 +229,53 @@ max-height: 100px;
 /* tablet and desktop */
 
 @media only screen and (min-width: 600px){
-body{
-  line-height: 150%;
 
+body{
+  color: black;
 }
 
-  #intro{
-    font-size: 5vw;
-    padding-top: 25%;
-    color: white;
-  
-  }
+#navcontainer{
+  width: 100% !important;
+margin: 0;
+}
+
+#intro{
+
+  font-size: 7vw;
+  padding-top: 25%;
+  margin-left: 15%;
+  color: white;
+text-align: center;
+}
+
+h1{
+  font-size: 5vw;
+}
+
+h2{
+  font-size: 3vw;
+}
+
+h5{
+  font-size: 2vw;
+}
+
+#about{
+  max-height: 75vh;
+}
 
 p{
-  font-size: 18px;
+  line-height: 150%;
+  font-size: 30px;
+}
 
-  }
+#portfolio-imgs1, #portfolio-imgs2, #portfolio-imgs3{
+  height: 50vh;
+margin: 0;
+  background-size: cover;
+  background-position: 0%;
+}
+
 
  #code-snippet{
     font-size: 18px;

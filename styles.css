@@ -3,54 +3,111 @@
 body {
   position: relative;
 color: #eee;
+
 }
 
 
 p {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 h1{
   
-  font-family: 'Helvetica', 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway',  sans-serif;
  
 }
 
-h5 {
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h5{
   font-family: 'Roboto', sans-serif;
-  justify-content: left;
 }
 
 
-#navigation, #navcontainer{
-  background-color: #E98F83;
+code{
+padding: 5px;
+white-space: pre-line;
 
+}
+
+#code-snippet{
+  background-color: #EBEAEB;
+padding: 25px;
+border: 1px grey solid;
+
+
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #E98F83 !important;
+  transition: background-color 200ms linear;
+}
+
+#navigation{
+  overflow: auto;
+}
+
+#logo{
+  font-size: 36px;
 }
 
 .nav-item{
   line-height: 10px;
+
+}
+
+.nav-link{
+justify-content: right;
 }
 
 #section1 {  
-background:url("desktopbg.jpeg");
-height: 75vh;
+background:url("guy.jpeg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+height: 50vh;
 z-index: -1;
+display: flex;
+align-items: center;
 }
 
 #intro{
-  font-size: 5vw;
+  font-size: 7vw;
   padding-top: 50%;
   color: white;
+text-align: center;
+}
 
+#about{
+  height: 100vh;
 }
 
 #section2 {
   width: 100vw;
 }
 
+
+
 #project-cards{
-  height: 75vh;
+  min-height: 75vh;
+  /* background: url(project3.jpeg);
+  background-size: cover; */
+  color: black;
+  font-size: 3vw;
 }
+
+#blurbs{
+  margin: 25px;
+}
+
+#blurbs .col:nth-child(){
+  margin-bottom: 50px;
+}
+
 
 #gradient{
 padding-bottom: 10vh;
@@ -58,7 +115,8 @@ width: 100vw;
 margin-top: 100px;
 position: relative;
 z-index:1;
-background: linear-gradient(150deg,  #fff 25%,  #05d5ff 50%, #a6ffcb 100%);
+background: linear-gradient(170deg,  #fff 40%,  #EA6B80 80%, #E98F83
+100%);
 
 }
 
@@ -69,16 +127,54 @@ color: #E98F83
 }
 
 
-img {
-  object-fit: contain;
-  height: 200px;
+i{
+  margin-bottom: 10px;
 }
 
 /* Media Queries */
 
+/* mobile */
+
 @media only screen and (max-width: 600px){
-  #section1 {  
-    background: url("bg.jpeg");
-    background-size: cover;
+body{
+  line-height: 150%;
+}
+
+
+#navigation{
+max-height: 100px;
   }
+
+  #logo{
+    font-size: 24px;
+  }
+
+  
+}
+
+/* tablet and desktop */
+
+@media only screen and (min-width: 600px){
+body{
+  line-height: 150%;
+
+}
+
+  #intro{
+    font-size: 5vw;
+    padding-top: 25%;
+    color: white;
+  
+  }
+
+p{
+  font-size: 18px;
+
+  }
+
+ #code-snippet{
+    font-size: 18px;
+  }
+
+
 }

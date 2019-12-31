@@ -2,7 +2,6 @@
 
 body {
 position: relative;
-color: #eee;
 text-decoration: none;
 }
 
@@ -21,7 +20,9 @@ h1{
 }
 
 h2 {
+
   font-family: 'Roboto Condensed', sans-serif;
+
 
 }
 
@@ -53,12 +54,12 @@ img{
 
 
 #portfolio-imgs2{
-  background:url("jonfinder.png");
-  background-size: cover;
+  background:url("jonfinder-mobile.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 100vw;
-  height: 50vh;
+  background-position: center;
+  height: 75vh;
+  
   z-index: -1;
   display: flex;
   align-items: center;
@@ -150,6 +151,9 @@ text-align: center;
   width: 100vw;
 }
 
+#piece2{
+  color: #8B584F;
+}
 
 
 #project-cards{
@@ -157,7 +161,7 @@ text-align: center;
   /* background: url(project3.jpeg);
   background-size: cover; */
 align-content: center;
-  color: black;
+ 
   font-size: 3vw;
   border:none;
 }

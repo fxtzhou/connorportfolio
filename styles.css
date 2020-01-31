@@ -179,6 +179,10 @@ align-content: center;
   margin-bottom: 50px;
 }
 
+#blurb-row2{
+  margin: 25px;
+  margin-top: -25px;
+}
 
 #gradient{
 padding-bottom: 10vh;
@@ -204,6 +208,8 @@ color: #E98F83
 
 i{
   margin-bottom: 10px;
+  float: left; 
+  margin-right: 5px;
 }
 
 /* Media Queries */

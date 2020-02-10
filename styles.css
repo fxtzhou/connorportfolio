@@ -3,6 +3,8 @@
 body {
 position: relative;
 text-decoration: none;
+color: white;
+background-color: #181818;
 }
 
 
@@ -10,20 +12,36 @@ text-decoration: none;
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 2;
+  color: #949495;
 }
 
 h1{
-  
-  font-family: 'Raleway',  sans-serif;
- 
+  font-family: 'Gothic A1',  sans-serif;
+ font-size: 48px;
+ line-height: 1.25;
 }
 
 h2 {
+  font-family: 'Gothic A1', sans-serif;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
 
-  font-family: 'Roboto Condensed', sans-serif;
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
 
 
+h4 {
+  font-family: 'Gothic A1', sans-serif;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 3px;
 }
 
 h5{
@@ -35,51 +53,22 @@ a{
   text-decoration: none;
 }
 
+span{
+  font-size: 16px;
+  color: white;
+}
+
+label{
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 12px;
+}
 
 img{
-  width: 100%;
+
+width: 100vw;
+ object-fit: cover;
+ border-radius: 50%;
 }
-
-#portfolio-imgs1{
-  background:url("caraok.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 100vw;
-  height: 50vh;
-  z-index: -1;
-  display: flex;
-  align-items: center;
-}
-
-
-#portfolio-imgs2{
-  background:url("jonfinder-mobile.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 75vh;
-  
-  z-index: -1;
-  display: flex;
-  align-items: center;
-}
-
-
-
-#portfolio-imgs3{
-  background:url("project3.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 100vw;
-  height: 50vh;
-  z-index: -1;
-  display: flex;
-  align-items: center;
-}
-
-
 
 code{
 padding: 5px;
@@ -87,9 +76,7 @@ white-space: pre-line;
 
 }
 
-.fas{
-  padding-right: 10px;
-}
+
 
 #code-snippet{
   background-color: #EBEAEB;
@@ -100,14 +87,14 @@ border: 1px grey solid;
 }
 
 .navbar-fixed-top.scrolled{
-  background-color: #E98F83 !important;
+  background-color: #202022 !important;
   transition: background-color 200ms linear;
 }
 
 #navigation{
   right: 0;
   left: 0;
-  min-width: 100vw;
+  width: 100vw;
 }
 
 #logo{
@@ -119,28 +106,17 @@ border: 1px grey solid;
 
 }
 
-.nav-link{
-justify-content: right;
-}
+
 
 
 #section1 {  
-background:url("guy.jpeg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 50% 50%;
 width: 100vw;
-height: 50vh;
-z-index: -1;
-display: flex;
-align-items: center;
 }
 
 #intro{
   font-size: 7vw;
-  padding-top: 50%;
   color: white;
-text-align: center;
+
 }
 
 #about{
@@ -151,24 +127,23 @@ text-align: center;
   width: 100vw;
 }
 
-#piece2{
-  color: #8B584F;
-}
 
 
 #project-cards{
-
-  /* background: url(project3.jpeg);
-  background-size: cover; */
 align-content: center;
- 
   font-size: 3vw;
   border:none;
+  background-color: transparent;
 }
 
 #project-cards a{
-  color: black;
+  color: grey;
   
+}
+
+.card-body{
+background-color: #202022;
+margin-bottom: 32px;
 }
 
 #blurbs{
@@ -196,20 +171,16 @@ background: linear-gradient(170deg,  #fff 40%,  #EA6B80 80%, #E98F83
 }
 
 
-.contact-links, .nav-link {
-  float: left;
-color: #E98F83
-}
-
 #custom-footer{
-  background-color: #E98F83;
+  background-color: #202022;
 }
 
+/* Font Awesome */
+.i{
 
-i{
-  margin-bottom: 10px;
-  float: left; 
-  margin-right: 5px;
+  color: white;
+  width: 5px;
+  height: 5px;
 }
 
 /* Media Queries */
@@ -233,7 +204,22 @@ max-height: 100px;
     font-size: 24px;
   }
 
-  
+  #intro{
+    margin-top: 40%;
+  }
+
+  #section1{
+    margin-bottom: 75px;
+  }
+
+  img{
+height: 48px;
+width: 48px;
+}
+
+#profile{
+  max-height: 50px;
+  align-content: center;
 }
 
 /* tablet and desktop */
@@ -247,15 +233,6 @@ body{
 #navcontainer{
   width: 100% !important;
 margin: 0;
-}
-
-#intro{
-
-  font-size: 7vw;
-  padding-top: 25%;
-  margin-left: 15%;
-  color: white;
-text-align: center;
 }
 
 h1{
@@ -277,15 +254,8 @@ h5{
 p{
   line-height: 150%;
   font-size: 30px;
+ 
 }
-
-#portfolio-imgs1, #portfolio-imgs2, #portfolio-imgs3{
-  height: 50vh;
-margin: 0;
-  background-size: cover;
-  background-position: 0%;
-}
-
 
  #code-snippet{
     font-size: 18px;

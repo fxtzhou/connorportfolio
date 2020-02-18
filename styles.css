@@ -7,7 +7,9 @@ color: white;
 background-color: #181818;
 }
 
-
+li{
+  padding-right: 10px;
+}
 
 
 p {
@@ -106,7 +108,9 @@ border: 1px grey solid;
 
 }
 
-
+.nav{
+  vertical-align: middle;
+}
 
 
 #section1 {  
@@ -116,7 +120,7 @@ width: 100vw;
 #intro{
   font-size: 7vw;
   color: white;
-
+display: block;
 }
 
 #about{
@@ -205,7 +209,7 @@ max-height: 100px;
   }
 
   #intro{
-    margin-top: 40%;
+    margin-top: 125px;
   }
 
   #section1{
@@ -213,6 +217,8 @@ max-height: 100px;
   }
 
   img{
+    display: block;
+    float: left;
 height: 48px;
 width: 48px;
 }
@@ -221,18 +227,61 @@ width: 48px;
   max-height: 50px;
   align-content: center;
 }
+}
 
 /* tablet and desktop */
 
-@media only screen and (min-width: 600px){
+@media (min-width: 600px){
 
-body{
-  color: black;
+
+  #navcontainer{
+    width: 100% !important;
+    margin: 0;
+    }
+    
+    #navigation{
+    width: 100% !important;
+    }
+    
+    #nav{
+    align-items: flex-end;
+    }
+
+  img{
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
+
+#section1{
+  margin-top: 50px;
+  max-width: 75vw;
+  margin-bottom: 150px;
+
+}
+  #profile{
+    float: left;
+  }
+
+  #about{
+    max-height: 75vh;
+  }
+
+#section2{
+ max-width: 75vw;
 }
 
-#navcontainer{
-  width: 100% !important;
-margin: 0;
+#section3{
+  max-width: 75vw;
+}
+
+i{
+  width: 25px;
+  height: 25px;
+}
+
+span{
+  font-size: 24px;
 }
 
 h1{
@@ -247,9 +296,7 @@ h5{
   font-size: 2vw;
 }
 
-#about{
-  max-height: 75vh;
-}
+
 
 p{
   line-height: 150%;
@@ -261,5 +308,7 @@ p{
     font-size: 18px;
   }
 
-
+  #intro{
+    margin-top: 75px;
+  }
 }
